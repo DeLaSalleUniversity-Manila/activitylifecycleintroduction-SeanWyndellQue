@@ -42,65 +42,53 @@ Implement an Android application that displays Logs in Logcat when the following
 On App Launch:
 
 ```shell
-10-02 16:51:28.393 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onCreate() method was called... (Tinawag po ang onCreate())
-10-02 16:51:28.393 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStart() method was called... (Tinawag po ang onStart())
-10-02 16:51:28.394 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onResume() method was called... (Tinawag po ang onResume())
+10-05 21:25:00.958  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onCreate() method was called...
+10-05 21:25:00.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStart() method was called...
+10-05 21:25:00.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onResume() method was called...
 ```
 
 
 On Android 'Home' button press: 
 ```shell
-10-02 16:54:27.411 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onPause() method was called... (Tinawag po ang onPause())
-10-02 16:54:27.412 32431-32431/com.cabatuan.lifecycleintroduction D/ActivityThread: ACT-AM_ON_PAUSE_CALLED ActivityRecord{42719368 token=android.os.BinderProxy@42718a28 {com.cabatuan.lifecycleintroduction/com.cabatuan.lifecycleintroduction.MainActivity}}
-10-02 16:54:27.422 32431-32431/com.cabatuan.lifecycleintroduction D/ActivityThread: ACT-PAUSE_ACTIVITY handled : 1 / android.os.BinderProxy@42718a28
-10-02 16:54:27.595 32431-32431/com.cabatuan.lifecycleintroduction D/OpenGLRenderer: Flushing caches (mode 0)
-10-02 16:54:27.596 32431-32431/com.cabatuan.lifecycleintroduction D/GraphicBuffer: close handle(0x60f46d08) (w:720 h:1280 f:1)
-10-02 16:54:28.030 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onSaveInstanceState() method was called... (Tinawag po ang onSaveInstanceState())
-10-02 16:54:28.030 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStop() method was called... (Tinawag po ang onStop())
+10-05 21:25:21.938  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onPause() method was called...
+10-05 21:25:22.918  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onSaveInstanceState() method was called...
+10-05 21:25:22.928  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStop() method was called...
 ```
 
 
 On relaunch of the App: (Notice that onCreate() was no longer called)
 ```shell
-10-02 16:57:57.971 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onRestart() method was called... (Tinawag po ang onRestart())
-10-02 16:57:57.971 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStart() method was called... (Tinawag po ang onStart())
-10-02 16:57:57.971 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onResume() method was called... (Tinawag po ang onResume())
+10-05 21:25:39.498  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onRestart() method was called...
+10-05 21:25:39.498  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStart() method was called...
+10-05 21:25:39.498  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onResume() method was called...
 ```
 
 
 On Android 'Back' button press:
 ```shell
-10-02 16:58:51.083 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onPause() method was called... (Tinawag po ang onPause())
-10-02 16:58:51.084 32431-32431/com.cabatuan.lifecycleintroduction D/ActivityThread: ACT-AM_ON_PAUSE_CALLED ActivityRecord{42719368 token=android.os.BinderProxy@42718a28 {com.cabatuan.lifecycleintroduction/com.cabatuan.lifecycleintroduction.MainActivity}}
-10-02 16:58:51.138 32431-32431/com.cabatuan.lifecycleintroduction D/ActivityThread: ACT-PAUSE_ACTIVITY_FINISHING handled : 0 / android.os.BinderProxy@42718a28
-10-02 16:58:51.214 32431-32431/com.cabatuan.lifecycleintroduction D/OpenGLRenderer: Flushing caches (mode 0)
-10-02 16:58:51.214 32431-32431/com.cabatuan.lifecycleintroduction D/GraphicBuffer: close handle(0x617737f8) (w:720 h:1280 f:1)
-10-02 16:58:51.634 32431-32431/com.cabatuan.lifecycleintroduction D/OpenGLRenderer: Flushing caches (mode 1)
-10-02 16:58:51.635 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStop() method was called... (Tinawag po ang onStop())
-10-02 16:58:51.635 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onDestroy() method was called... (Tinawag po ang onDestroy())
+10-05 21:25:51.648  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onPause() method was called...
+10-05 21:25:52.368  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStop() method was called...
+10-05 21:25:52.368  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onDestroy() method was called...
 ```
 
 
 On relaunch after being destroyed:
 ```shell
-10-02 17:01:33.158 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onCreate() method was called... (Tinawag po ang onCreate())
-10-02 17:01:33.158 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStart() method was called... (Tinawag po ang onStart())
-10-02 17:01:33.158 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onResume() method was called... (Tinawag po ang onResume())
+10-05 21:26:03.888  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onCreate() method was called...
+10-05 21:26:03.888  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStart() method was called...
+10-05 21:26:03.888  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onResume() method was called...
 ```
 
 
 On configuration change (Rotating the Screen)
 ```shell
-10-02 17:03:00.800 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onPause() method was called... (Tinawag po ang onPause())
-10-02 17:03:00.800 32431-32431/com.cabatuan.lifecycleintroduction D/ActivityThread: ACT-AM_ON_PAUSE_CALLED ActivityRecord{42794250 token=android.os.BinderProxy@42793910 {com.cabatuan.lifecycleintroduction/com.cabatuan.lifecycleintroduction.MainActivity}}
-10-02 17:03:00.801 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onSaveInstanceState() method was called... (Tinawag po ang onSaveInstanceState())
-10-02 17:03:00.801 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStop() method was called... (Tinawag po ang onStop())
-10-02 17:03:00.801 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onDestroy() method was called... (Tinawag po ang onDestroy())
-10-02 17:03:00.855 32431-32431/com.cabatuan.lifecycleintroduction D/OpenGLRenderer: Flushing caches (mode 0)
-10-02 17:03:00.857 32431-32431/com.cabatuan.lifecycleintroduction D/GraphicBuffer: close handle(0x61778b50) (w:720 h:1280 f:1)
-10-02 17:03:00.901 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onCreate() method was called... (Tinawag po ang onCreate())
-10-02 17:03:00.901 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onStart() method was called... (Tinawag po ang onStart())
-10-02 17:03:00.902 32431-32431/com.cabatuan.lifecycleintroduction D/MainActivity: onResume() method was called... (Tinawag po ang onResume())
+10-05 21:26:14.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onPause() method was called...
+10-05 21:26:14.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onSaveInstanceState() method was called...
+10-05 21:26:14.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStop() method was called...
+10-05 21:26:14.968  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onDestroy() method was called...
+10-05 21:26:15.148  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onCreate() method was called...
+10-05 21:26:15.148  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onStart() method was called...
+10-05 21:26:15.148  14812-14812/wynsean.activitylifecycle D/MainActivity﹕ onResume() method was called...
 ```
 
 
