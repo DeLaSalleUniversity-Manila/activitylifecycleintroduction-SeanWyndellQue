@@ -92,14 +92,11 @@ On configuration change (Rotating the Screen)
 ```
 
 
-
-
 ## Screenshots:
 
-![alt tag](https://github.com/DeLaSalleUniversity-Manila/activitylifecycleintroduction-melvincabatuan/blob/master/2015-10-02-16:53:45.png)
+![alt tag](https://github.com/wynsean/ActivityLifeCycle/blob/master/Screenshot1.png)
 
-![alt tag](https://github.com/DeLaSalleUniversity-Manila/activitylifecycleintroduction-melvincabatuan/blob/master/device-2015-10-02-170904.png)
+![alt tag](https://github.com/wynsean/ActivityLifeCycle/blob/master/Screenshot2.png)
 
-![alt tag](https://github.com/DeLaSalleUniversity-Manila/activitylifecycleintroduction-melvincabatuan/blob/master/2015-10-02-17:06:23.png)
+![alt tag](https://github.com/wynsean/ActivityLifeCycle/blob/master/Screenshot3.png)
 
-"Time is an illusion perpetrated by the manufacturers of space." - Anonymous
